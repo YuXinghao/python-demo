@@ -19,5 +19,6 @@ def produce(c):
         r = c.send(n)
         print('生产者说:消费者拿走了我的包子，并给我返回了值: %s' % r)
     c.close()
+    
 c = consumer()
 produce(c)
